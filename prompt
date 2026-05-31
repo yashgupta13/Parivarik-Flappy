@@ -1,0 +1,262 @@
+I want you to act as a senior HTML5 game developer and build a complete browser-based game called **"Flappy Friends: College Edition"**.
+
+### Tech Stack
+
+* React + Vite
+* HTML5 Canvas
+* Tailwind CSS
+* JavaScript (no TypeScript)
+* No backend required
+* Store highscores in localStorage
+
+### Game Concept
+
+The game is a customized Flappy Bird clone based on my friend group and college life.
+
+Players choose a character before starting.
+
+Characters are represented by custom PNG images that I will provide later.
+
+### Core Gameplay
+
+* Classic Flappy Bird mechanics.
+* Spacebar, mouse click, or touch causes the character to flap.
+* Gravity pulls the character downward.
+* Obstacles move from right to left.
+* Passing an obstacle increases score by 1.
+* Collision ends the game.
+
+### Character Selection Screen
+
+Before starting:
+
+* Show a character selection menu.
+* Each character has:
+
+  * name
+  * image
+  * unique funny messages
+
+Example:
+
+```javascript
+const characters = [
+  {
+    id: "yash",
+    name: "Yash",
+    image: "/characters/yash.png"
+  },
+  {
+    id: "vedansh",
+    name: "Vedansh",
+    image: "/characters/vedansh.png"
+  }
+];
+```
+
+### Custom Obstacles
+
+Instead of pipes, obstacles should be randomly chosen from:
+
+* Assignment
+* Exam
+* Professor
+* Deadline
+* Attendance Warning
+* Viva
+
+Each obstacle should support a custom image.
+
+Example:
+
+```javascript
+const obstacles = [
+  "/obstacles/assignment.png",
+  "/obstacles/exam.png",
+  "/obstacles/professor.png"
+];
+```
+
+### Funny Death Messages
+
+When the player dies, randomly display one of:
+
+```javascript
+[
+ "Assignment not submitted.",
+ "Caught sleeping in class.",
+ "Git push failed.",
+ "Laptop battery died.",
+ "Attendance below 75%.",
+ "Exam started before preparation."
+]
+```
+
+### High Score System
+
+Use localStorage.
+
+Store:
+
+* highest score
+* player name
+* date achieved
+
+### Milestone Events
+
+Create a milestone system.
+
+At specific scores trigger unique surprise events.
+
+### Score 10
+
+Show popup:
+
+```text
+Attendance still safe.
+```
+
+Game slows down for 5 seconds.
+
+### Score 20
+
+Show popup:
+
+```text
+Free Period Unlocked.
+```
+
+Player becomes invincible for 3 seconds.
+
+### Score 30
+
+Show popup:
+
+```text
+Professor Entered The Classroom.
+```
+
+Obstacle speed increases.
+
+### Score 40
+
+Show popup:
+
+```text
+Mid Sem Panic Mode.
+```
+
+Obstacle gap becomes smaller.
+
+### Score 50 (Special Event)
+
+This is the most important feature.
+
+When score reaches 50:
+
+1. Pause gameplay.
+2. Fade screen to black.
+3. Play a full-screen celebration video.
+4. Video should play only once.
+5. After video ends:
+
+   * show fireworks animation
+   * show message:
+
+```text
+LEGEND STATUS ACHIEVED
+```
+
+6. Allow player to continue playing afterward.
+
+The video file should be loaded from:
+
+```text
+/public/videos/legend.mp4
+```
+
+Implement the complete React component logic for this.
+
+### Hidden Easter Eggs
+
+If player reaches:
+
+Score 69:
+
+```text
+Nice.
+```
+
+Score 75:
+
+```text
+Attendance Secured.
+```
+
+Score 100:
+
+```text
+Touch Grass Achievement Unlocked.
+```
+
+### Sound System
+
+Add support for:
+
+* flap sound
+* collision sound
+* milestone sound
+* celebration sound
+* background music
+
+Files loaded from:
+
+```text
+/public/audio/
+```
+
+### UI Requirements
+
+Show:
+
+* Current Score
+* High Score
+* Selected Character
+* Pause Button
+* Restart Button
+
+### Mobile Support
+
+Game must work on:
+
+* Desktop
+* Android
+* iPhone
+
+Touch controls required.
+
+### Code Requirements
+
+Generate:
+
+1. Complete project folder structure
+2. React components
+3. Canvas game loop
+4. Physics system
+5. Collision detection
+6. Milestone event manager
+7. Video celebration system
+8. LocalStorage manager
+9. Asset loading system
+10. Tailwind styling
+
+Write production-quality code with comments and proper component separation.
+
+The game should be fully playable after running:
+
+```bash
+npm install
+npm run dev
+```
+
+Provide the implementation file-by-file.
