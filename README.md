@@ -1,4 +1,4 @@
-# 🐦 Flappy Friends: College Edition
+# 🐦 Parivarik Flappy
 
 A Flappy Bird clone themed around college life and your friend group. Built with React + Vite + HTML5 Canvas + Tailwind CSS.
 

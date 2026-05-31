@@ -55,7 +55,7 @@ export default function CharacterSelect({ onSelect }) {
             fontSize: "clamp(18px, 5vw, 36px)",
           }}
         >
-          FLAPPY FRIENDS
+          PARIVARIK FLAPPY
         </div>
         <div
           className="text-lg sm:text-xl text-yellow-300"
@@ -198,7 +198,7 @@ export default function CharacterSelect({ onSelect }) {
 
       {/* Version tag */}
       <div className="absolute bottom-3 right-4 text-white text-opacity-20 text-xs">
-        v1.0 — College Edition
+        v1.0 — Parivarik Edition
       </div>
     </div>
   );
